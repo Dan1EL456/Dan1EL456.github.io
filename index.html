@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio - Desarrollador</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #0ff0c0;
+      --secondary-color: #0a1f2f;
+      --text-color: #ffffff;
+      --accent-color: #1affd5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--secondary-color);
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--primary-color);
+    }
+
+    header nav a {
+      margin: 0 1rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem;
+      background-color: var(--secondary-color);
+    }
+
+    .hero .info {
+      max-width: 50%;
+    }
+
+    .hero img {
+      border-radius: 20px;
+      max-height: 300px;
+    }
+
+    section {
+      padding: 4rem;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #122b3c;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 10px #00ffd5;
+    }
+
+    .card i {
+      font-size: 2rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #091921;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mi Portafolio</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#academico">Académico</a>
+      <a href="#personal">Experiencia</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="info">
+      <h2>Hola, soy Daniel Gomez</h2>
+      <p>Desarrollador con un enfoque en la creación de aplicaciones intuitivas y eficientes.</p>
+    </div>
+    <link rel="icon" type="image/png" href="src/images/Avatar.png">
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos Destacados</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>App de Tareas</h3>
+        <p>Una aplicación para gestionar tareas con React y Firebase.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Portafolio Web</h3>
+        <p>Mi portafolio personal hecho con HTML, CSS y JavaScript.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-database"></i>
+        <h3>Sistema de Inventario</h3>
+        <p>Herramienta para manejar inventarios usando Node.js y MongoDB.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="academico">
+    <h2>Experiencia Académica</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Ingeniería de Sistemas</h3>
+        <p>Universidad CESMAG - 2023 a 2025</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-certificate"></i>
+        <h3>Certificaciones</h3>
+        <p>Aún no hay disponibles</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="personal">
+    <h2>Experiencia Personal</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Freelance</h3>
+        <p>Desarrollo de sitios web para pequeñas empresas y emprendedores.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-users"></i>
+        <h3>Proyectos Colaborativos</h3>
+        <p>Participación en hackatones y proyectos open source.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Daniel Gomez - Todos los derechos reservados</p>
+  </footer>
+</body>
+
+</html>
